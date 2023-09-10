@@ -44,15 +44,15 @@
 
     <div class="site-container">
         <div class="hero">
-            <img class="desktop" src="https://i.ibb.co/KrmN2dg/Mobile-Marketing-cuate.png" />
-            <img class="mobile" src="https://i.ibb.co/KrmN2dg/Mobile-Marketing-cuate.png" />
-            <div class="hero-text">
+            <img class="desktop" src="https://i.ibb.co/KrmN2dg/Mobile-Marketing-cuate.png" width="300" height="300" />
+            <img class=" mobile " src="https://i.ibb.co/KrmN2dg/Mobile-Marketing-cuate.png " width="300 " height="300 " />
+            <div class="hero-text ">
                 <h1>Emberige Applications</h1>
             </div>
         </div>
 
-        <div class="main">
-            <div class="col-1">
+        <div class="main ">
+            <div class="col-1 ">
                 <h2>Fill in your details</h2>
                 <p>Short instructional sentence or paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis, erat sed tempor porta, massa orci suscipit lacus, ut rhoncus ligula felis ac lorem. Mauris egestas molestie ipsum.</p>
                 <p>&nbsp;</p>
@@ -63,49 +63,50 @@
   <h4>Another subheader.</h4>
   <p>Pellentesque quis purus quam. Duis facilisis mattis sem, bibendum ultricies erat. Suspendisse mi libero, malesuada ut faucibus ac, maximus at ante. Maecenas varius, odio ut ultricies porta, quam sapien bibendum ex, eget fringilla eros mi vitae tortor. Praesent condimentum lectus turpis, a imperdiet nulla bibendum eu. Donec eu vehicula purus, non vulputate justo. Suspendisse ut scelerisque lectus. Donec tempus turpis ante, vel luctus arcu volutpat facilisis. Nunc fringilla, nunc et tristique ornare, sapien ipsum tincidunt nibh, ut pellentesque dui magna venenatis dolor. Vivamus a ante libero. Vestibulum eget pretium nibh.</p> -->
             </div>
-            <div class="rif">
-                <form name="InquiryForm" ng-submit="doSubmit(InquiryForm)" novalidate>
-                    <input type="text" id="FirstName" placeholder="First Name" ng-model="Rif.FirstName" ng-maxlength="25" ng-required="true" />
+            <div class="rif ">
+                <form name="InquiryForm " ng-submit="doSubmit(InquiryForm) " novalidate>
+                    <input type="text " id="FirstName " placeholder="First Name " ng-model="Rif.FirstName " ng-maxlength="25 " ng-required="true " />
 
-                    <input type="text" id="Last" placeholder="Last Name" ng-model="Rif.LastName" ng-maxlength="25" ng-required="true" />
+                    <input type="text " id="Last " placeholder="Last Name " ng-model="Rif.LastName " ng-maxlength="25 " ng-required="true " />
 
-                    <input type="text" id="address_1" placeholder="Address" ng-model="Rif.Address" ng-maxlength="30" ng-required="true" />
+                    <input type="text " id="address_1 " placeholder="Address " ng-model="Rif.Address " ng-maxlength="30 " ng-required="true " />
 
-                    <input type="text" id="zip" placeholder="ZIP" ng-model="Rif.PostalCode" ng-model-options="{ updateOn: 'default blur', debounce: { default: 1000, blur: 0 } }" ng-required="true" ng-pattern="SelectedCountryResident.ZipPattern" ng-maxlength="15" />
+                    <input type="text " id="zip " placeholder="ZIP " ng-model="Rif.PostalCode " ng-model-options="{ updateOn: 'default blur', debounce: { default: 1000, blur: 0 } } " ng-required="true " ng-pattern="SelectedCountryResident.ZipPattern
+                " ng-maxlength="15 " />
 
-                    <div class="badzip-city-state" ng-if="ShowCityState == true">
-                        <input type="text" id="city" placeholder="City" ng-model="Rif.City" ng-maxlength="25" ng-required="true" />
-                        <select id="stateprovince" title='State / Province*' ng-options="state.Abbr as state.Name for state in States" ng-model="Rif.StateProvince" ng-required="true">
+                    <div class="badzip-city-state " ng-if="ShowCityState==t rue ">
+                        <input type="text " id="city " placeholder="City " ng-model="Rif.City " ng-maxlength="25 " ng-required="true " />
+                        <select id="stateprovince " title='State / Province*' ng-options="state.Abbr as state.Name for state in States " ng-model="Rif.StateProvince " ng-required="true ">
                 </select>
                     </div>
 
-                    <input type="text" id="phone" placeholder="Phone Number" ng-model="Rif.Phone1" ng-attr-placeholder="{{ SelectedCountryResident.PhonePlaceholder }}" ng-model-options="{ updateOn: 'default blur', debounce: { default: 5000, blur: 0 } }" ng-required="true"
-                        ui-mask="{{ SelectedCountryResident.PhoneMask }}" ng-maxlength="20" />
+                    <input type="text " id="phone " placeholder="Phone Number " ng-model="Rif.Phone1 " ng-attr-placeholder="{{ SelectedCountryResident.PhonePlaceholder }} " ng-model-options="{ updateOn: 'default blur', debounce: { default: 5000, blur:
+                0 } } " ng-required="true " ui-mask="{{ SelectedCountryResident.PhoneMask }} " ng-maxlength="20 " />
 
-                    <input type="text" id="email" placeholder="Email Address" ng-model="Rif.Email" ng-model-options="{ updateOn: 'blur' }" ng-required="true" ng-maxlength="100" />
+                    <input type="text " id="email " placeholder="Email Address " ng-model="Rif.Email " ng-model-options="{ updateOn: 'blur' } " ng-required="true " ng-maxlength="100 " />
 
-                    <select id="hsgradyear" title='High school graduation year*' ng-options="year for year in Years" ng-model="Rif.HighSchoolGradYear" ng-required="true">
-                <option value="" disabled>Select year of High School Graduation</option>
+                    <select id="hsgradyear " title='High school graduation year*' ng-options="year for year in Years " ng-model="Rif.HighSchoolGradYear " ng-required="true ">
+                <option value=" " disabled>Select year of High School Graduation</option>
             </select>
 
-                    <select id="LocationId" title='Location of interest*' ng-options="location.ID as location.AlternateName group by location.State for location in Locations" ng-model="Rif.LocationID" ng-required="true" onchange="setHousingValue()">n
-				<option value="" disabled>Select a location</option>
+                    <select id="LocationId " title='Location of interest*' ng-options="location.ID as location.AlternateName group by location.State for location in Locations " ng-model="Rif.LocationID " ng-required="true " onchange="setHousingValue() ">n
+				<option value=" " disabled>Select a location</option>
 			</select>
 
-                    <select id="ProgramOfferingId" title='Program of interest*' ng-options="offering.ProgramOfferingID as offering.ProgramName + ' (' + offering.OutcomeCode + ')'+   (offering.IsInterntionallyTitleIVEligible == true ? ' (U.S. Version)' : '') group by offering.OutcomeName for offering in Offerings"
-                        ng-model="Rif.ProgramOfferingID" ng-required="true">
+                    <select id="ProgramOfferingId " title='Program of interest*' ng-options="offering.ProgramOfferingID as offering.ProgramName + ' (' + offering.OutcomeCode + ')'+ (offering.IsInterntionallyTitleIVEligible==t rue ? ' (U.S. Version)'
+                : '') group by offering.OutcomeName for offering in Offerings " ng-model="Rif.ProgramOfferingID " ng-required="true ">
 
-                <option value="" disabled>{{ ProgramOfferingEmptyOptionText }}</option>
+                <option value=" " disabled>{{ ProgramOfferingEmptyOptionText }}</option>
             </select>
 
-                    <input type="submit" value="Submit Your Application" id="submit" />
+                    <input type="submit " value="Submit Your Application " id="submit " />
                 </form>
             </div>
 
-            <!---div class="ThankYou inner alert" ng-show="SubmittedRif != null">
-                <div class="ThankYou-content">
-                    <span class="alert-close">X</span>
-                    <h2 class="thankyou_header">{{ SubmittedRif.FirstName }}, Thank you for submitting your application.</h2>
+            <!---div class="ThankYou inner alert " ng-show="SubmittedRif !=n ull ">
+                <div class="ThankYou-content ">
+                    <span class="alert-close ">X</span>
+                    <h2 class="thankyou_header ">{{ SubmittedRif.FirstName }}, Thank you for submitting your application.</h2>
                     <p>If you have any questions or concerns about continuing your education, a Director of Admissions will be happy to speak with you. Contact us today!</p>
                 </div>
             </div>---->
@@ -115,23 +116,23 @@
     </div>
 
     <footer>
-        <div class="container">
-            <img src="https://i.ibb.co/mGQ4B99/IMG-3875.png" width="200" height="150" alt="The Art Institutes">
+        <div class="container ">
+            <img src="https://i.ibb.co/mGQ4B99/IMG-3875.png " width="200 " height="150 " alt="The Art Institutes ">
 
 
             <p>Copyright © 2023 Emberige School</p>
             <p>Applcation instructions and procedure</p>
             <p>Prerequisites and requirements goes here in detail
-                <a href="mailto:materialsreview@aii.edu">materialsreview@Emberige.sch</a>.</p>
-            <p><strong>See <a href="http://aiprograms.info">aiprograms.info</a> for program duration, tuition, fees and other costs, median debt, salary data, alumni success, and other important info.</strong></p>
+                <a href="mailto:materialsreview@aii.edu ">materialsreview@Emberige.sch</a>.</p>
+            <p><strong>See <a href="http://aiprograms.info ">aiprograms.info</a> for program duration, tuition, fees and other costs, median debt, salary data, alumni success, and other important info.</strong></p>
 
-            <ul class="footer-sci-links">
-                <li><a href="#" target="_blank">Accreditation and Licensing</a></li>
-                <li><a href="#" target="_blank">Do Not Call Policy</a></li>
-                <li><a href="#" target="_blank">Non-Discrimination Policy</a></li>
-                <li><a href="#" target="_blank">Privacy and Cookies Policy</a></li>
-                <li><a href="#" target="_blank">Student Consumer Information</a></li>
-                <li><a href="#" target="_blank">Terms of Use</a></li>
+            <ul class="footer-sci-links ">
+                <li><a href="# " target="_blank ">Accreditation and Licensing</a></li>
+                <li><a href="# " target="_blank ">Do Not Call Policy</a></li>
+                <li><a href="# " target="_blank ">Non-Discrimination Policy</a></li>
+                <li><a href="# " target="_blank ">Privacy and Cookies Policy</a></li>
+                <li><a href="# " target="_blank ">Student Consumer Information</a></li>
+                <li><a href="# " target="_blank ">Terms of Use</a></li>
             </ul>
         </div>
     </footer>
