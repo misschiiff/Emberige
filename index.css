@@ -677,7 +677,7 @@ a {
 .footer-link {
     font-size: 0.85rem;
     font-weight: var(--bold);
-    color: inherit;
+    color: #fe6217;
 }
 
 .footer-link:hover {
@@ -743,11 +743,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fe6217;
 }
 
 .footer-social a {
     display: inline-block;
     padding: 0.5rem;
+    color: #fe6217;
 }
 
 .footer-social svg {
@@ -1053,7 +1055,7 @@ input#submit:hover {
 }
 
 footer {
-    background-color: #000;
+    background-color: #ffffff;
     padding: 40px 0;
 }
 
@@ -1061,6 +1063,19 @@ footer * {
     margin: 0;
     padding: 0;
     color: #fff;
+    content: color#080808;
+}
+
+footer .container p {
+    color: #191818;
+}
+
+ul.footer-sci-links li {
+    color: #191818;
+}
+
+footer .container ul li a {
+    color: #191818;
 }
 
 footer .container {
