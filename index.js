@@ -1,3 +1,4 @@
+console.log("Script loaded");
 const navBar = document.querySelector(".nav");
 const navButton = document.querySelector(".nav-toggle");
 const counterElements = document.querySelectorAll(".get-started .counter");
@@ -13,6 +14,7 @@ let mousedown = false;
 
 // Hamburger Navigation
 function toggleNavigation() {
+    console.log("Button clicked");
     if (navBar.classList.contains("is-open")) {
         this.setAttribute("aria-expanded", false);
         navBar.classList.remove("is-open");
@@ -20,7 +22,12 @@ function toggleNavigation() {
         navBar.classList.add("is-open");
         this.setAttribute("aria-expanded", true);
     }
+
 }
+
+
+// Event Listeners
+navButton.addEventListener("click", toggleNavigation);
 
 // Newsletter form submit
 function createAlert(elem, msg) {

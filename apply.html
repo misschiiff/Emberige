@@ -9,50 +9,42 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic" rel="stylesheet" type="text/css">
 </head>
 
-
-
-
-
-
-
-
-
 <body>
-    <header id="header " class="header ">
-        <img src="https://i.ibb.co/mGQ4B99/IMG-3875.png" width="200" height="150" class="logo " alt="Learn English " id="header-img " />
-        <nav id="nav-bar " class="nav">
-            <ul class="nav-list ">
+    <header id="header" class="header">
+        <img src="https://i.ibb.co/5kD4PN8/IMG-4127.png" width="200" height="90" class="logo" alt="Learn English" id="header-img" />
+        <nav id="nav-bar" class="nav">
+            <ul class="nav-list">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#features ">Features</a>
+                    <a class="nav-link" href="index.html#features">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="index.html#how-it-works ">How It Works</a>
+                    <a class="nav-link" href="index.html#how-it-works">How It Works</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="apply.html">Apply</a>
+                    <a class="nav-link" href="apply.html">Apply</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-cta " href="index.html#subscribe ">Subscribe</a>
+                    <a class="nav-link nav-link-cta" href="index.html#subscribe">Subscribe</a>
                 </li>
             </ul>
         </nav>
-        <button class="nav-toggle " aria-label="Toggle navigation " aria-expanded="false ">
-          <span class="visuallyhidden ">Menu</span>
-          <span class="hamburger "></span>
+        <button class="nav-toggle" aria-label="Togglenavigation" aria-expanded="false">
+          <span class="visuallyhidden">Menu</span>
+          <span class="hamburger"></span>
         </button>
     </header>
 
     <div class="site-container">
         <div class="hero">
             <img class="desktop" src="https://i.ibb.co/KrmN2dg/Mobile-Marketing-cuate.png" width="50" height="50" />
-            <img class=" mobile " src="https://i.ibb.co/KrmN2dg/Mobile-Marketing-cuate.png " width="50" height="50" />
-            <div class="hero-text ">
+            <img class=" mobile" src="https://i.ibb.co/KrmN2dg/Mobile-Marketing-cuate.png " width="50" height="50" />
+            <div class="hero-text">
                 <h1>Emberige Applications</h1>
             </div>
         </div>
 
-        <div class="main ">
-            <div class="col-1 ">
+        <div class="main">
+            <div class="col-1">
                 <h2>Fill in your details</h2>
                 <p>Short instructional sentence or paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis, erat sed tempor porta, massa orci suscipit lacus, ut rhoncus ligula felis ac lorem. Mauris egestas molestie ipsum.</p>
                 <p>&nbsp;</p>
@@ -63,20 +55,20 @@
   <h4>Another subheader.</h4>
   <p>Pellentesque quis purus quam. Duis facilisis mattis sem, bibendum ultricies erat. Suspendisse mi libero, malesuada ut faucibus ac, maximus at ante. Maecenas varius, odio ut ultricies porta, quam sapien bibendum ex, eget fringilla eros mi vitae tortor. Praesent condimentum lectus turpis, a imperdiet nulla bibendum eu. Donec eu vehicula purus, non vulputate justo. Suspendisse ut scelerisque lectus. Donec tempus turpis ante, vel luctus arcu volutpat facilisis. Nunc fringilla, nunc et tristique ornare, sapien ipsum tincidunt nibh, ut pellentesque dui magna venenatis dolor. Vivamus a ante libero. Vestibulum eget pretium nibh.</p> -->
             </div>
-            <div class="rif ">
-                <form name="InquiryForm " ng-submit="doSubmit(InquiryForm) " novalidate>
-                    <input type="text " id="FirstName " placeholder="First Name " ng-model="Rif.FirstName " ng-maxlength="25 " ng-required="true " />
+            <div class="rif">
+                <form name="InquiryForm" ng-submit="doSubmit(InquiryForm)" novalidate>
+                    <input type="text" id="FirstName" placeholder="First Name" ng-model="Rif.FirstName" ng-maxlength="25 " ng-required="true " />
 
-                    <input type="text " id="Last " placeholder="Last Name " ng-model="Rif.LastName " ng-maxlength="25 " ng-required="true " />
+                    <input type="text" id="Last" placeholder="Last Name" ng-model="Rif.LastName" ng-maxlength="25 " ng-required="true " />
 
-                    <input type="text " id="address_1 " placeholder="Address " ng-model="Rif.Address " ng-maxlength="30 " ng-required="true " />
+                    <input type="text" id="address_1" placeholder="Address" ng-model="Rif.Address" ng-maxlength="30 " ng-required="true " />
 
-                    <input type="text " id="zip " placeholder="ZIP " ng-model="Rif.PostalCode " ng-model-options="{ updateOn: 'default blur', debounce: { default: 1000, blur: 0 } } " ng-required="true " ng-pattern="SelectedCountryResident.ZipPattern
-                " ng-maxlength="15 " />
+                    <input type="text" id="zip" placeholder="ZIP" ng-model="Rif.PostalCode" ng-model-options="{ updateOn: 'default blur', debounce: { default: 1000, blur: 0 } } " ng-required="true " ng-pattern="SelectedCountryResident.ZipPattern
+                " ng-maxlength="15" />
 
-                    <div class="badzip-city-state " ng-if="ShowCityState==t rue ">
-                        <input type="text " id="city " placeholder="City " ng-model="Rif.City " ng-maxlength="25 " ng-required="true " />
-                        <select id="stateprovince " title='State / Province*' ng-options="state.Abbr as state.Name for state in States " ng-model="Rif.StateProvince " ng-required="true ">
+                    <div class="badzip-city-state" ng-if="ShowCityState==t rue">
+                        <input type="text" id="city" placeholder="City" ng-model="Rif.City" ng-maxlength="25" ng-required="true" />
+                        <select id="stateprovince" title='State / Province*' ng-options="state.Abbr as state.Name for state in States" ng-model="Rif.StateProvince " ng-required="true">
                 </select>
                     </div>
 
@@ -99,7 +91,7 @@
                 <option value=" " disabled>{{ ProgramOfferingEmptyOptionText }}</option>
             </select>
 
-                    <input type="submit " value="Submit Your Application " id="submit " />
+                    <input type="submit" value="Submit Your Application" id="submit" />
                 </form>
             </div>
 
@@ -123,8 +115,8 @@
             <p>Copyright © 2023 Emberige School</p>
             <p>Applcation instructions and procedure</p>
             <p>Prerequisites and requirements goes here in detail
-                <a href="mailto:materialsreview@aii.edu ">materialsreview@Emberige.sch</a>.</p>
-            <p><strong>See <a href="http://aiprograms.info ">aiprograms.info</a> for program duration, tuition, fees and other costs, median debt, salary data, alumni success, and other important info.</strong></p>
+                <a href="mailto:materialsreview@edu ">materialsreview@Emberige.sch</a>.</p>
+            <p><strong>See <a href="http://aiprograms.info ">programs.info</a> for program duration, tuition, fees and other costs, median debt, salary data, alumni success, and other important info.</strong></p>
 
             <ul class="footer-sci-links ">
                 <li><a href="# " target="_blank ">Accreditation and Licensing</a></li>
@@ -136,6 +128,13 @@
             </ul>
         </div>
     </footer>
+    <script src="index.js"></script>
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
